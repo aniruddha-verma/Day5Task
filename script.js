@@ -28,7 +28,7 @@ Object.prototype.customFilter = function(filterCallback) {
 
 // console.log(arr.customFilter(num =>  num%3 === 0));
 
-//Custom Reduce Function
+// Custom Reduce Function
 Object.prototype.customReduce = function(reduceCallback, initialValue) {
     let accumulator = initialValue ?? this[0];
     let startIndex = initialValue !== undefined ? 0 : 1;
@@ -41,6 +41,10 @@ Object.prototype.customReduce = function(reduceCallback, initialValue) {
 
 // console.log(arr.customReduce((acc, num) => acc + num));
 
+
+
+
+// MultiplyByN Function
 Array.prototype.multiplyByN = function(n=3) {
     let result = [];
     for(let i=0; i<this.length; i++) {
@@ -50,6 +54,8 @@ Array.prototype.multiplyByN = function(n=3) {
     }
   
 // console.log(arr.multiplyByN(4));
+
+
 
 
 //Find True Length of String
@@ -62,12 +68,15 @@ String.prototype.actualLength = function() {
 // console.log(str.length);
 // console.log(str.actualLength());
 
+
+
 // Destructuring Arrays
 let [first, second, third] = arr;
 // console.log(first, second, third);
 
-// Destructuring Objects
 
+
+// Destructuring Objects
 const obj = {
     name: "Aniruddha",
     age: 23,
